@@ -7,7 +7,6 @@ import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class AppScreens(val route: String, val imageVector: ImageVector? = null, val label: String? = null) {
-
     data object AppMainScreen : AppScreens(
         route = "app_main")
     data object AppHomeScreen : AppScreens(
