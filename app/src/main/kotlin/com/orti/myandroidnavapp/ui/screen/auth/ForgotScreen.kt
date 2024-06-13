@@ -31,7 +31,7 @@ fun ForgotScreen(
             onClick = {
                 navController.navigate(AuthScreens.AuthLoginScreen.route) {
                 }}) {
-            Text(text = "Forgot", fontSize = 20.sp)
+            Text(text = "Back to Login", fontSize = 20.sp)
         }
     }
 }
