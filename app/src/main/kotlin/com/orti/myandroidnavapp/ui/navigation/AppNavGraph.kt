@@ -19,7 +19,7 @@ import com.orti.myandroidnavapp.ui.screen.app.SettingsScreen
 
 fun NavGraphBuilder.appNavGraph(rootNavController: NavHostController) {
     navigation(
-        route = Graphs.AppGraph.route,
+        route = AppGraphs.AppGraph.route,
         startDestination = AppScreens.AppMainScreen.route
     ) {
         composable(route = AppScreens.AppMainScreen.route) {

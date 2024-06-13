@@ -13,9 +13,9 @@ import androidx.navigation.compose.rememberNavController
 @Composable
 fun RootNavGraph(rootNavController: NavHostController = rememberNavController()) {
     NavHost(
-        route = Graphs.RootGraph.route,
+        route = AppGraphs.RootGraph.route,
         navController = rootNavController,
-        startDestination = Graphs.AuthGraph.route
+        startDestination = AppGraphs.AuthGraph.route
     ) {
         authNavGraph(navController = rootNavController)
         appNavGraph(rootNavController = rootNavController)

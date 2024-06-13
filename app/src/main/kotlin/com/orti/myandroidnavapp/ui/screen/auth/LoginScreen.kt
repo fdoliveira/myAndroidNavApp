@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.orti.myandroidnavapp.ui.navigation.AuthScreens
-import com.orti.myandroidnavapp.ui.navigation.Graphs
+import com.orti.myandroidnavapp.ui.navigation.AppGraphs
 
 @Composable
 fun LoginScreen(navController: NavController) {
@@ -27,8 +27,8 @@ fun LoginScreen(navController: NavController) {
         Text(text = "Login Screen", fontSize = 30.sp)
         Spacer(modifier = Modifier.height(40.dp))
         Button(
-            onClick = { navController.navigate(Graphs.AppGraph.route) {
-               popUpTo(Graphs.AuthGraph.route) {
+            onClick = { navController.navigate(AppGraphs.AppGraph.route) {
+               popUpTo(AppGraphs.AuthGraph.route) {
                    inclusive = true
                }
             }}) {

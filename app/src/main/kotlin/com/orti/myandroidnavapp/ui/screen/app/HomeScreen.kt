@@ -10,7 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.orti.myandroidnavapp.ui.navigation.Graphs
+import com.orti.myandroidnavapp.ui.navigation.AppGraphs
 
 @Composable
 fun HomeScreen(rootNavController: NavController, appNavController: NavController) {
@@ -21,8 +21,8 @@ fun HomeScreen(rootNavController: NavController, appNavController: NavController
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Button(
-            onClick = {rootNavController.navigate(Graphs.AuthGraph.route) {
-                popUpTo(Graphs.AppGraph.route) {
+            onClick = {rootNavController.navigate(AppGraphs.AuthGraph.route) {
+                popUpTo(AppGraphs.AppGraph.route) {
                     inclusive = true
                 }
             }}) {
